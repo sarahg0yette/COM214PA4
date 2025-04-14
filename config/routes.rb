@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get "profile/home"
+  get "profile/about"
+  get "profile/portfolio"
   
-  root "home#index"
+  root "profile#home"
 
   get "home/index"
   get "home/about"

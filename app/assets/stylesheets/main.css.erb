@@ -5,3 +5,60 @@
 .navbar-icon {
 	max-height: 30px;
 }
+
+body {
+    background-color: lightpink !important;
+}
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%; /* Set the fixed height of the footer here */
+    line-height: 10%; /* Vertically center the text there */
+    background-color: #f5f5f5;
+  }
+  
+  
+  #info { /* the following rules made my footer look like an info alert. giving it rounded corners, dynamic spacing, and more*/
+    border-radius: 12px;
+    height: 60px; 
+    position: fixed; 
+    bottom:3%;
+    width:100%;
+    background-color: #c9eaf0; 
+    color:#41676e !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #csslink{ /*making my link the same color as the rest of the test*/
+    color:#41676e !important;
+    padding: 2px;
+    font-weight: bold;
+  }
+
+  .csscontainer {
+    display: grid;
+    gap: 50px; /*The bootstrap version maintains the gap no matter the window size*/
+    grid-template-columns: auto auto auto;
+    padding: 0 10% 0 10%;
+    text-align: center;
+  }
+
+  #bubble { /*Found this at w3 schools. This searches for divs that are the children of css containers
+    https://www.w3.org/TR/CSS2/selector.html#child-selectors*/
+    background-color: white;
+    text-align: center;
+    display: inline;
+  }
+
+
+  #mybutton { /* The following rules were to make my link look like a button.*/
+    height: 40px; /*giving the button height*/
+    background-color: #1687f2;
+    color: azure;
+    border-radius: 5px;
+    border-color: #1687f2;
+  }
